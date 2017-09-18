@@ -1,0 +1,14 @@
+inherit rubygem
+
+NAME="ruby-puma"
+VERSION=3.10.0
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby Rack HTTP server"
+DESCRIPTION="Puma is a simple, fast, threaded, and highly concurrent HTTP/1.1
+server for Ruby/Rack applications. Puma is intended for use in both development
+and production environments."
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_puma_CONTENTS="usr/bin/puma* ${RUBYGEM_EXTDIR#/} ${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_puma_doc_CONTENTS=${RUBYGEM_DOCDIR#/}

@@ -1,7 +1,7 @@
 inherit rubygem
 
 NAME="ruby-puma"
-VERSION=3.10.0
+VERSION=3.11.4
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby Rack HTTP server"
